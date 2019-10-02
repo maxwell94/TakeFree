@@ -3,3 +3,10 @@
   border-radius:2px;
   border:1px solid grey;  
 }
+
+/* I fixed the card images height and width*/
+.card-img-top {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;  
+}
