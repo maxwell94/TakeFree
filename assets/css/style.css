@@ -16,3 +16,8 @@
    color:white; 
    margin-bottom:4px; 
 }
+
+#new1 {
+  border-top: 3px solid #F05F40;
+  max-width: 110px;
+}
