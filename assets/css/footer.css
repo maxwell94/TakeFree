@@ -64,20 +64,20 @@
 
 .footer-dark .item.social > a {
   font-size: 20px;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
-  margin: 0 8px;
+  margin: 20px 10px;
   color: #fff;
-  opacity: 0.75;
+  opacity: 1.75;
 }
 
 .footer-dark .item.social > a:hover {
   opacity: 0.9;
+  background: rgb(238,75,40);
 }
 
 .footer-dark .copyright {
