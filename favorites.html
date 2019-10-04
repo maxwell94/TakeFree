@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
   <!-- <link rel="stylesheet" href="assets/css/contact_us.css"> -->
   <!-- Custom fonts for this template-->
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
 
@@ -33,9 +34,9 @@
         text-transform: uppercase;
     }
 
-    body {
+    /* body {
       overflow-y:hidden;
-    }
+    } */
   
     .navbar-light .navbar-brand {
       font-size: 20px;
@@ -50,6 +51,10 @@
         color:rgb(238,75,40);
     }
 
+    #mynav {
+      background:#ffffff;
+    }
+
     #container-login {
       margin: 5% auto ; 
     }
@@ -60,13 +65,13 @@
 
 <body>
 
-<nav class="navbar navbar-light navbar-expand-lg fixed-top shadow">
+<nav class="navbar navbar-light navbar-expand-lg fixed-top shadow" id="mynav">
       <div class="container">
           <a class="navbar-brand" href="index.html">TAKEFREE</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse" id="navbarNav"> 
               <ul class="nav navbar-nav mr-auto">
                   <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">GIFTS</a></li>
                   <li class="nav-item active" role="presentation"><a class="nav-link js-scroll-trigger" href="favorites.html">Favorites</a></li>
@@ -77,7 +82,119 @@
             <a class="btn btn-primary text-white shadow btn-md js-scroll-trigger" role="button" href="login.html">Login</a>
           </div>    
       </div>
-  </nav>
+ </nav>
+
+  <!-- Cadeaux section -->
+<section id="cadeaux">
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="text-center mt-0">Favorites</h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="./assets/img/sofa.jpg" class="card-img-top" alt="...">
+          <div class="top-right"><i class="fa fa-heart fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Sofa</h5>
+            <div class="card-text text-black-50">Somebody need a sofa?</div>
+            <hr>
+            <div class="card-text text-black-50">City: Parma</div>
+            <div class="card-text text-black-50">Distance: 2,5 km</div>
+            <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="./assets/img/skateboard.jpg" class="card-img-top" alt="...">
+          <div class="top-right"><i class="fa fa-heart fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Bed sheets</h5>
+            <div class="card-text text-black-50">Somebody need bedsheets?</div>
+            <hr>
+            <div class="card-text text-black-50">City: Parma</div>
+            <div class="card-text text-black-50">Distance: 2,5 km</div>
+            <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <img src="./assets/img/speaker.jpg" class="card-img-top" alt="...">
+            <div class="top-right"><i class="fa fa-heart fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Bed sheets</h5>
+              <div class="card-text text-black-50">Somebody need bedsheets?</div>
+              <hr>
+              <div class="card-text text-black-50">City: Reggio Emilia</div>
+              <div class="card-text text-black-50">Distance: 4 km</div>
+              <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <img src="./assets/img/speaker.jpg" class="card-img-top" alt="...">
+            <div class="top-right"><i class="fa fa-heart fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Bed sheets</h5>
+              <div class="card-text text-black-50">Somebody need bedsheets?</div>
+              <hr>
+              <div class="card-text text-black-50">City: Reggio Emilia</div>
+              <div class="card-text text-black-50">Distance: 4 km</div>
+              <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+            </div>
+          </div>
+      </div>      
+
+    </div>
+
+    <div class="container mt-5">
+    <div class="row">
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center mx-auto">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="#">4</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">5</a>
+          </li>      
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+        </li>
+     </ul>
+     </div>
+    </div>
+    </section>
+  
 
   <!-- Bootstrap core JavaScript-->
 
