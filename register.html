@@ -9,20 +9,75 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Register</title>
+  <title>Register</title>
+  <link href="./assets/css/sb-admin-2.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/contact_us.css"> -->
   <!-- Custom fonts for this template-->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
 
-  <!-- Custom styles for this template-->
-  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <style type="text/css">
+    .navbar-light .navbar-nav .nav-link {
+        color:black;
+        font-family:'Open Sans','Helvetica Neue','Arial',sans-serif; 
+        font-weight: bold;
+        font-size: 14.4px;
+    }
+
+    body {
+      overflow-y:hidden;
+    }
+  
+    .navbar-light .navbar-brand {
+      font-size: 20px;
+      color:black;
+      font-family:'Open Sans','Helvetica Neue','Arial',sans-serif; 
+      font-weight: bold;
+    }
+
+    .navbar-light .navbar-brand:hover,
+    .navbar-light .nav-item.active .nav-link,
+    .navbar-light .nav-item:hover .nav-link {
+        color:rgb(238,75,40);
+    }
+
+    #container-register {
+      margin: 8% auto ; 
+    }
+
+  </style>
 
 </head>
 
-<body class="bg-gradient-primary">
+<body>
 
-  <div class="container">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TAKEFREE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">GIFTS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">INTERESTED</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">CONTACT</a></li>
+                </ul>
+              <a class="btn btn-primary text-white shadow btn-md js-scroll-trigger" role="button" href="login.html">Login</a>
+            </div>    
+        </div>
+    </nav>
+
+  <div class="container" id="container-register">
 
     <div class="card o-hidden border-0 shadow-lg my-5">
       <div class="card-body p-0">
@@ -59,10 +114,10 @@
                 </a>
                 <hr>
                 <a href="index.html" class="btn btn-google btn-user btn-block">
-                  <i class="fab fa-google fa-fw"></i> Register with Google
+                  <i class="fa fa-google fa-fw"></i> Register with Google
                 </a>
                 <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                  <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                  <i class="fa fa-facebook fa-fw"></i> Register with Facebook
                 </a>
               </form>
               <hr>
@@ -81,14 +136,13 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Core plugin JavaScript-->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/creative.js"></script>
 
-  <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.min.js"></script>
 
 </body>
 
