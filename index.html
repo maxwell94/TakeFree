@@ -52,8 +52,41 @@
     </div>
     <div class="col-lg-8 mx-auto">
       <p class="text-lowercase text-faded mb-5" style="filter: brightness(132%);font-style: normal;font-size: 20px;font-weight: bold;font-family: Merriweather, serif;">Help so many people in your own town giving away things you don't need anymore like clothes, shoes , food , everything you think can help somebody else because you don't know but the world needs you too.&nbsp;</p>
-    </div><a class="btn btn-primary text-white shadow btn-xl js-scroll-trigger" role="button" href="#">New Gift <i class="fa fa-plus"></i></a></div>
+    </div><a class="btn btn-primary text-white shadow btn-xl js-scroll-trigger" role="button" data-toggle="modal" data-target="#newGiftModal" href="#">New Gift <i class="fa fa-plus"></i></a></div>
+
 </header>
+
+  <!-- Modal -->
+  <div class="modal fade" id="newGiftModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
 <!-- Cadeaux section -->
 <section id="cadeaux">
@@ -70,7 +103,7 @@
 
     <div class="col-xl-3 col-md-6 mb-4">
       <div class="card border-0 shadow">
-        <img src="https://source.unsplash.com/eX0N1Ex-qFo" class="card-img-top" alt="...">
+        <img src="./assets/img/shoes.jpg" class="card-img-top" alt="...">
         <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
         <div class="card-body text-center">
           <h5 class="card-title mb-0">Sofa</h5>
@@ -85,7 +118,7 @@
 
      <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-0 shadow">
-          <img src="https://source.unsplash.com/_BDBEP0ePQc" class="card-img-top" alt="">
+          <img src="./assets/img/skateboard.jpg" class="card-img-top" alt="">
           <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
           <div class="card-body text-center">
             <h5 class="card-title mb-0">Bed sheets</h5>
@@ -100,7 +133,7 @@
 
       <div class="col-xl-3 col-md-6 mb-4">
           <div class="card border-0 shadow">
-            <img src="https://source.unsplash.com/bE6k8SQT2FQ" class="card-img-top" alt="...">
+            <img src="./assets/img/sunglasses.jpg" class="card-img-top" alt="...">
             <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
             <div class="card-body text-center">
               <h5 class="card-title mb-0">Bed sheets</h5>
@@ -111,11 +144,11 @@
               <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
             </div>
           </div>
-        </div>
+      </div>
     
     <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-0 shadow">
-          <img src="https://source.unsplash.com/_cv8iKu2ONM" class="card-img-top" alt="...">
+          <img src="./assets/img/speaker.jpg" class="card-img-top" alt="...">
           <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
           <div class="card-body text-center">
             <h5 class="card-title mb-0">Bed sheets</h5>
@@ -130,7 +163,7 @@
 
     <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-0 shadow">
-          <img src="https://source.unsplash.com/gKIloo1rpn0" class="card-img-top" alt="...">
+          <img src="./assets/img/sofa.jpg" class="card-img-top" alt="...">
           <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
           <div class="card-body text-center">
             <h5 class="card-title mb-0">Bed sheets</h5>
@@ -141,11 +174,11 @@
             <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
           </div>
         </div>
-      </div>
+    </div>
   
       <div class="col-xl-3 col-md-6 mb-4">
           <div class="card border-0 shadow">
-            <img src="https://source.unsplash.com/SxAXphIPWeg" class="card-img-top" alt="...">
+            <img src="./assets/img/chair.jpg" class="card-img-top" alt="...">
             <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
             <div class="card-body text-center">
               <h5 class="card-title mb-0">Bed sheets</h5>
@@ -160,7 +193,7 @@
     
       <div class="col-xl-3 col-md-6 mb-4">
           <div class="card border-0 shadow">
-            <img src="https://source.unsplash.com/9489sFfgk4c" class="card-img-top" alt="...">
+            <img src="./assets/img/cycle.jpg" class="card-img-top" alt="...">
             <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
             <div class="card-body text-center">
               <h5 class="card-title mb-0">Bed sheets</h5>
@@ -175,7 +208,7 @@
     
         <div class="col-xl-3 col-md-6 mb-4">
             <div class="card border-0 shadow">
-              <img src="https://source.unsplash.com/YPeqMN_wfw0" class="card-img-top" alt="">
+              <img src="./assets/img/shoes.jpg" class="card-img-top" alt="">
               <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
               <div class="card-body text-center">
                 <h5 class="card-title mb-0">Bed sheets</h5>
