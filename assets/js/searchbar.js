@@ -3,7 +3,7 @@ $(function(){
     var $searchbar  = $('#searchbar');
     
     $('#mynav ul li a').on('click', function(e){
-      e.preventDefault();
+      //e.preventDefault();
 
       if($(this).attr('id') == 'searchtoggl') {
         if(!$searchbar.is(":visible")) { 
@@ -21,7 +21,7 @@ $(function(){
       }
     });
     
-    $('#searchform').submit(function(e){
-      e.preventDefault(); // stop form submission
-    });
+    // $('#searchform').submit(function(e){
+    //   e.preventDefault(); // stop form submission
+    // });
   });
