@@ -86,225 +86,331 @@
 
 <!-- Cadeaux section -->
 <section id="cadeaux">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="text-center mt-0">All gifts</h1>
+                    <hr>
+                </div>
+            </div>
 
-    <div class="container mb-5">
-        <div class="row justify-content-start">
-            <div class="col-lg-12 text-center">
-                <h1 class="text-center mt-0">All gifts</h1>
-                <hr>
-            </div>
-        </div>
-        <div class="row justify-content-start mt-5">
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6"> 
-                    <!-- qui inserisco la selezione per i gifts -->
-                    <select name="selcategories" class="selectpicker" data-width="90%">
-                    <option value="1" selected>All Categories</option>  
-                    <option>Clothing</option>
-                    <option>Books</option>
-                    <option>Games and toys</option>
-                    <option>Electronics</option>
-                    <option>cancelleria e prodotti per ufficio</option>   
-                    </select>
-                    
-                </div>
-    
-                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
-                        <!-- qui inserisco la selezione per i gifts -->
-                        <select name="selcategories" class="selectpicker" data-width="90%">
-                            <option value="1" selected>Parma</option>  
-                            <option>Bologna</option>
-                            <option>Milano</option>
-                            <option>Roma</option>
-                            <option>Venezia</option>
-                            <option>Napoli</option>   
-    
-                        </select>
-                        
-                </div>
-            </div>
-    </div>    
+            <div class="container">
+                <div class="row mt-5">
+                       <!-- qui inserisco la selezione per i gifts -->
+                       <select name="selcategories" class="selectpicker">
+                        <option value="1" selected>All Categories</option>  
+                        <option>Clothing</option>
+                        <option>Books</option>
+                        <option>Games and toys</option>
+                        <option>Electronics</option>
+                        <option>cancelleria e prodotti per ufficio</option>   
 
-    <div class="container mt-5">
-    <div class="row">
+                      </select>
+                      
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <!-- qui inserisco la selezione per le città -->
+                        <select class="selectpicker" multiple>
+                            <option selected>Parma</option>
+                            <option value="ag">Agrigento</option>
+                            <option value="al">Alessandria</option>
+                            <option value="an">Ancona</option>
+                            <option value="ao">Aosta</option>
+                            <option value="ar">Arezzo</option>
+                            <option value="ap">Ascoli Piceno</option>
+                            <option value="at">Asti</option>
+                            <option value="av">Avellino</option>
+                            <option value="ba">Bari</option>
+                            <option value="bt">Barletta-Andria-Trani</option>
+                            <option value="bl">Belluno</option>
+                            <option value="bn">Benevento</option>
+                            <option value="bg">Bergamo</option>
+                            <option value="bi">Biella</option>
+                            <option value="bo">Bologna</option>
+                            <option value="bz">Bolzano</option>
+                            <option value="bs">Brescia</option>
+                            <option value="br">Brindisi</option>
+                            <option value="ca">Cagliari</option>
+                            <option value="cl">Caltanissetta</option>
+                            <option value="cb">Campobasso</option>
+                            <option value="ci">Carbonia-iglesias</option>
+                            <option value="ce">Caserta</option>
+                            <option value="ct">Catania</option>
+                            <option value="cz">Catanzaro</option>
+                            <option value="ch">Chieti</option>
+                            <option value="co">Como</option>
+                            <option value="cs">Cosenza</option>
+                            <option value="cr">Cremona</option>
+                            <option value="kr">Crotone</option>
+                            <option value="cn">Cuneo</option>
+                            <option value="en">Enna</option>
+                            <option value="fm">Fermo</option>
+                            <option value="fe">Ferrara</option>
+                            <option value="fi">Firenze</option>
+                            <option value="fg">Foggia</option>
+                            <option value="fc">Forl&igrave;-Cesena</option>
+                            <option value="fr">Frosinone</option>
+                            <option value="ge">Genova</option>
+                            <option value="go">Gorizia</option>
+                            <option value="gr">Grosseto</option>
+                            <option value="im">Imperia</option>
+                            <option value="is">Isernia</option>
+                            <option value="sp">La spezia</option>
+                            <option value="aq">L'aquila</option>
+                            <option value="lt">Latina</option>
+                            <option value="le">Lecce</option>
+                            <option value="lc">Lecco</option>
+                            <option value="li">Livorno</option>
+                            <option value="lo">Lodi</option>
+                            <option value="lu">Lucca</option>
+                            <option value="mc">Macerata</option>
+                            <option value="mn">Mantova</option>
+                            <option value="ms">Massa-Carrara</option>
+                            <option value="mt">Matera</option>
+                            <option value="vs">Medio Campidano</option>
+                            <option value="me">Messina</option>
+                            <option value="mi">Milano</option>
+                            <option value="mo">Modena</option>
+                            <option value="mb">Monza e della Brianza</option>
+                            <option value="na">Napoli</option>
+                            <option value="no">Novara</option>
+                            <option value="nu">Nuoro</option>
+                            <option value="og">Ogliastra</option>
+                            <option value="ot">Olbia-Tempio</option>
+                            <option value="or">Oristano</option>
+                            <option value="pd">Padova</option>
+                            <option value="pa">Palermo</option>
+                            <option value="pr">Parma</option>
+                            <option value="pv">Pavia</option>
+                            <option value="pg">Perugia</option>
+                            <option value="pu">Pesaro e Urbino</option>
+                            <option value="pe">Pescara</option>
+                            <option value="pc">Piacenza</option>
+                            <option value="pi">Pisa</option>
+                            <option value="pt">Pistoia</option>
+                            <option value="pn">Pordenone</option>
+                            <option value="pz">Potenza</option>
+                            <option value="po">Prato</option>
+                            <option value="rg">Ragusa</option>
+                            <option value="ra">Ravenna</option>
+                            <option value="rc">Reggio di Calabria</option>
+                            <option value="re">Reggio nell'Emilia</option>
+                            <option value="ri">Rieti</option>
+                            <option value="rn">Rimini</option>
+                            <option value="rm">Roma</option>
+                            <option value="ro">Rovigo</option>
+                            <option value="sa">Salerno</option>
+                            <option value="ss">Sassari</option>
+                            <option value="sv">Savona</option>
+                            <option value="si">Siena</option>
+                            <option value="sr">Siracusa</option>
+                            <option value="so">Sondrio</option>
+                            <option value="ta">Taranto</option>
+                            <option value="te">Teramo</option>
+                            <option value="tr">Terni</option>
+                            <option value="to">Torino</option>
+                            <option value="tp">Trapani</option>
+                            <option value="tn">Trento</option>
+                            <option value="tv">Treviso</option>
+                            <option value="ts">Trieste</option>
+                            <option value="ud">Udine</option>
+                            <option value="va">Varese</option>
+                            <option value="ve">Venezia</option>
+                            <option value="vb">Verbano-Cusio-Ossola</option>
+                            <option value="vc">Vercelli</option>
+                            <option value="vr">Verona</option>
+                            <option value="vv">Vibo valentia</option>
+                            <option value="vi">Vicenza</option>
+                            <option value="vt">Viterbo</option>
 
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-            <img src="https://source.unsplash.com/UJwcQ3xeFHo" class="card-img-top" alt="...">
-            <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-            <div class="card-body text-center">
-                <h5 class="card-title mb-0">Sofa</h5>
-                <div class="card-text text-black-50">Somebody need a sofa?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Parma</div>
-                <div class="card-text text-black-50">Distance: 2,5 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
-            </div>
-            </div>
-        </div>
-    
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-            <img src="https://source.unsplash.com/NG4684I8Bng" class="card-img-top" alt="...">
-            <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-            <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bed sheets</h5>
-                <div class="card-text text-black-50">Somebody need bedsheets?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Parma</div>
-                <div class="card-text text-black-50">Distance: 2,5 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
-            </div>
-            </div>
-        </div>
-    
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://source.unsplash.com/9v7j3hdAqnA" class="card-img-top" alt="...">
-                <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-                <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bed sheets</h5>
-                <div class="card-text text-black-50">Somebody need bedsheets?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Reggio Emilia</div>
-                <div class="card-text text-black-50">Distance: 4 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                          </select>
+                     </div>
                 </div>
+
             </div>
+
         </div>
+        <div class="container mt-5">
+        <div class="row">
     
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="https://source.unsplash.com/0R1ci4Rb9jU" class="card-img-top" alt="...">
-                <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-                <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bed sheets</h5>
-                <div class="card-text text-black-50">Somebody need bedsheets?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Reggio Emilia</div>
-                <div class="card-text text-black-50">Distance: 4 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
-                </div>
-            </div>
-        </div>   
-        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="col-xl-3 col-md-6 mb-4">
                 <div class="card border-0 shadow">
-                    <img src="./assets/img/shoes.jpg" class="card-img-top" alt="...">
-                    <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-                    <div class="card-body text-center">
+                <img src="https://source.unsplash.com/UJwcQ3xeFHo" class="card-img-top" alt="...">
+                <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+                <div class="card-body text-center">
                     <h5 class="card-title mb-0">Sofa</h5>
                     <div class="card-text text-black-50">Somebody need a sofa?</div>
                     <hr>
                     <div class="card-text text-black-50">City: Parma</div>
                     <div class="card-text text-black-50">Distance: 2,5 km</div>
                     <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                </div>
+                </div>
+            </div>
+        
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                <img src="https://source.unsplash.com/NG4684I8Bng" class="card-img-top" alt="...">
+                <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Bed sheets</h5>
+                    <div class="card-text text-black-50">Somebody need bedsheets?</div>
+                    <hr>
+                    <div class="card-text text-black-50">City: Parma</div>
+                    <div class="card-text text-black-50">Distance: 2,5 km</div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                </div>
+                </div>
+            </div>
+        
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                    <img src="https://source.unsplash.com/9v7j3hdAqnA" class="card-img-top" alt="...">
+                    <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+                    <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Bed sheets</h5>
+                    <div class="card-text text-black-50">Somebody need bedsheets?</div>
+                    <hr>
+                    <div class="card-text text-black-50">City: Reggio Emilia</div>
+                    <div class="card-text text-black-50">Distance: 4 km</div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
                     </div>
                 </div>
-        </div>
-            
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-            <img src="./assets/img/skateboard.jpg" class="card-img-top" alt="">
-            <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-            <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bed sheets</h5>
-                <div class="card-text text-black-50">Somebody need bedsheets?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Reggio Emilia</div>
-                <div class="card-text text-black-50">Distance: 4 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
-            </div>
-            </div>
-        </div>
-            
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="./assets/img/sunglasses.jpg" class="card-img-top" alt="...">
-                <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-                <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bed sheets</h5>
-                <div class="card-text text-black-50">Somebody need bedsheets?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Parma</div>
-                <div class="card-text text-black-50">Distance: 3,4 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
-                </div>
-            </div>
-        </div>
-                
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-            <img src="./assets/img/speaker.jpg" class="card-img-top" alt="...">
-            <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-            <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bed sheets</h5>
-                <div class="card-text text-black-50">Somebody need bedsheets?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Modena</div>
-                <div class="card-text text-black-50">Distance: 10,5 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
-            </div>
-            </div>
-        </div>      
-            
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-            <img src="./assets/img/sofa.jpg" class="card-img-top" alt="...">
-            <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-            <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bed sheets</h5>
-                <div class="card-text text-black-50">Somebody need bedsheets?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Parma</div>
-                <div class="card-text text-black-50">Distance: 2,5 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
-            </div>
-            </div>
-        </div>
-    
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="./assets/img/chair.jpg" class="card-img-top" alt="...">
-                <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-                <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bed sheets</h5>
-                <div class="card-text text-black-50">Somebody need bedsheets?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Reggio Emilia</div>
-                <div class="card-text text-black-50">Distance: 4 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
-                </div>
-            </div>
             </div>
         
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-                <img src="./assets/img/cycle.jpg" class="card-img-top" alt="...">
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                    <img src="https://source.unsplash.com/0R1ci4Rb9jU" class="card-img-top" alt="...">
+                    <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+                    <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Bed sheets</h5>
+                    <div class="card-text text-black-50">Somebody need bedsheets?</div>
+                    <hr>
+                    <div class="card-text text-black-50">City: Reggio Emilia</div>
+                    <div class="card-text text-black-50">Distance: 4 km</div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                    </div>
+                </div>
+            </div>   
+            <div class="col-xl-3 col-md-6 mb-4">
+                    <div class="card border-0 shadow">
+                      <img src="./assets/img/shoes.jpg" class="card-img-top" alt="...">
+                      <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+                      <div class="card-body text-center">
+                        <h5 class="card-title mb-0">Sofa</h5>
+                        <div class="card-text text-black-50">Somebody need a sofa?</div>
+                        <hr>
+                        <div class="card-text text-black-50">City: Parma</div>
+                        <div class="card-text text-black-50">Distance: 2,5 km</div>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                      </div>
+                    </div>
+            </div>
+              
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                <img src="./assets/img/skateboard.jpg" class="card-img-top" alt="">
                 <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
                 <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bed sheets</h5>
-                <div class="card-text text-black-50">Somebody need bedsheets?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Parma</div>
-                <div class="card-text text-black-50">Distance: 3,4 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                    <h5 class="card-title mb-0">Bed sheets</h5>
+                    <div class="card-text text-black-50">Somebody need bedsheets?</div>
+                    <hr>
+                    <div class="card-text text-black-50">City: Reggio Emilia</div>
+                    <div class="card-text text-black-50">Distance: 4 km</div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                </div>
                 </div>
             </div>
-        </div>
+              
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                    <img src="./assets/img/sunglasses.jpg" class="card-img-top" alt="...">
+                    <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+                    <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Bed sheets</h5>
+                    <div class="card-text text-black-50">Somebody need bedsheets?</div>
+                    <hr>
+                    <div class="card-text text-black-50">City: Parma</div>
+                    <div class="card-text text-black-50">Distance: 3,4 km</div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                    </div>
+                </div>
+            </div>
+                  
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                <img src="./assets/img/speaker.jpg" class="card-img-top" alt="...">
+                <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Bed sheets</h5>
+                    <div class="card-text text-black-50">Somebody need bedsheets?</div>
+                    <hr>
+                    <div class="card-text text-black-50">City: Modena</div>
+                    <div class="card-text text-black-50">Distance: 10,5 km</div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                </div>
+                </div>
+            </div>      
+              
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                <img src="./assets/img/sofa.jpg" class="card-img-top" alt="...">
+                <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Bed sheets</h5>
+                    <div class="card-text text-black-50">Somebody need bedsheets?</div>
+                    <hr>
+                    <div class="card-text text-black-50">City: Parma</div>
+                    <div class="card-text text-black-50">Distance: 2,5 km</div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                </div>
+                </div>
+            </div>
         
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-            <img src="./assets/img/shoes.jpg" class="card-img-top" alt="">
-            <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-            <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bed sheets</h5>
-                <div class="card-text text-black-50">Somebody need bedsheets?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Modena</div>
-                <div class="card-text text-black-50">Distance: 10,5 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                    <img src="./assets/img/chair.jpg" class="card-img-top" alt="...">
+                    <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+                    <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Bed sheets</h5>
+                    <div class="card-text text-black-50">Somebody need bedsheets?</div>
+                    <hr>
+                    <div class="card-text text-black-50">City: Reggio Emilia</div>
+                    <div class="card-text text-black-50">Distance: 4 km</div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                    </div>
+                </div>
+                </div>
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                    <img src="./assets/img/cycle.jpg" class="card-img-top" alt="...">
+                    <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+                    <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Bed sheets</h5>
+                    <div class="card-text text-black-50">Somebody need bedsheets?</div>
+                    <hr>
+                    <div class="card-text text-black-50">City: Parma</div>
+                    <div class="card-text text-black-50">Distance: 3,4 km</div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>   
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-0 shadow">
+                <img src="./assets/img/shoes.jpg" class="card-img-top" alt="">
+                <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+                <div class="card-body text-center">
+                    <h5 class="card-title mb-0">Bed sheets</h5>
+                    <div class="card-text text-black-50">Somebody need bedsheets?</div>
+                    <hr>
+                    <div class="card-text text-black-50">City: Modena</div>
+                    <div class="card-text text-black-50">Distance: 10,5 km</div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
+                </div>
+                </div>
+            </div>   
 
         </div>
                     
