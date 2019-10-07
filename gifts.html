@@ -98,17 +98,18 @@
                 <div class="row mt-5">
                     <div class="col-lg-6 text-center">
                        <!-- qui inserisco la selezione per i gifts -->
-                       <select class="selectpicker" multiple>
-                        <option>Mustard</option>
-                        <option>Ketchup</option>
-                        <option>Relish</option>
+                       <select name="selcategories" class="selectpicker" data-width="auto" multiple>
+                        <option value="1" selected>All Categories</option>   
+                        <option value="2">Mustard</option>
+                        <option value="3">Ketchup</option>
+                        <option value="4">Relish</option>
                       </select>
                       
                     </div>
                     <div class="col-lg-6 text-center">
                         <!-- qui inserisco la selezione per le città -->
                         <select class="selectpicker" multiple>
-                            <option>Parma</option>
+                            <option selected>Parma</option>
                             <option>Bologna</option>
                             <option>Milano</option>
                             <option>Roma</option>
@@ -342,7 +343,7 @@
     </div>
 </div>
 </section>
-    
+   
   <!-- Bootstrap core JavaScript-->
   <script src="assets/js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
