@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="assets/css/teamstyle.css">
     <link rel="stylesheet" href="assets/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="assets/css/contact_us.css"> -->
 
     <!-- Font Awesome Icons -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
 
 </head>
 
@@ -56,30 +57,66 @@
     <!-- <a class="btn btn-primary text-white shadow btn-xl js-scroll-trigger" role="button" data-toggle="modal" data-target="#newGiftModal" href="#">New Gift <i class="fa fa-plus"></i></a></div> -->
 </header>
 
-  <!-- floating action button -->
-  <a href="#" class="float" data-toggle="modal" data-target="#newGiftModal">
+<!-- floating action button -->
+  <a href="#" class="float" data-toggle="modal" data-target=".bd-example-modal-lg">
       <i class="fa fa-plus my-float"></i>
   </a>
 
-  <!-- Modal -->
-  <div class="modal fade" id="newGiftModal" role="dialog">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <div class="modal-body">
-            <p>This is a large modal.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+  <!-- New Gift Modal-->
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Add a new gift</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="title-gift" class="col-form-label">Title:</label>
+                  <input type="text" class="form-control" id="title-gift">
+                </div>
+                <div class="form-group">
+                  <label for="description-text" class="col-form-label">Description:</label>
+                  <textarea class="form-control" id="description-text"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="gift-pictures" class="col-form-label">Gift pictures:</label>
+                </div>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                    </div>
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile01"
+                        aria-describedby="inputGroupFileAddon01" multiple>
+                      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                    </div>
+                </div>
+                <script>
+                   $('#inputGroupFile01').on('change',function(){
+                        //get the file name
+                        var filepath = $(this).val();
+                        //extract the filename from the filepath
+                        var filename = filepath.split('\\').pop().split('/').pop();
+                        //replace the "Choose a file" label
+                        $(this).next('.custom-file-label').html(filename);
+                    })
+                </script>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+
       </div>
     </div>
   </div>
-
 
 <!-- Cadeaux section -->
 <section>
@@ -109,7 +146,7 @@
       </div>
     </div>
 
-     <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-3 col-md-6 mb-4">
         <div class="card border-0 shadow">
           <img src="./assets/img/skateboard.jpg" class="card-img-top" alt="">
           <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
@@ -124,7 +161,7 @@
         </div>
     </div>
 
-      <div class="col-xl-3 col-md-6 mb-4">
+    <div class="col-xl-3 col-md-6 mb-4">
           <div class="card border-0 shadow">
             <img src="./assets/img/sunglasses.jpg" class="card-img-top" alt="...">
             <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
@@ -169,7 +206,7 @@
         </div>
     </div>
   
-      <div class="col-xl-3 col-md-6 mb-4">
+     <div class="col-xl-3 col-md-6 mb-4">
           <div class="card border-0 shadow">
             <img src="./assets/img/chair.jpg" class="card-img-top" alt="...">
             <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
@@ -182,7 +219,7 @@
               <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
             </div>
           </div>
-        </div>
+      </div>
     
       <div class="col-xl-3 col-md-6 mb-4">
           <div class="card border-0 shadow">
@@ -199,20 +236,20 @@
           </div>
       </div>
     
-        <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <img src="./assets/img/shoes.jpg" class="card-img-top" alt="">
-              <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
-              <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bed sheets</h5>
-                <div class="card-text text-black-50">Somebody need bedsheets?</div>
-                <hr>
-                <div class="card-text text-black-50">City: Modena</div>
-                <div class="card-text text-black-50">Distance: 10,5 km</div>
-                <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
-              </div>
+      <div class="col-xl-3 col-md-6 mb-4">
+          <div class="card border-0 shadow">
+            <img src="./assets/img/shoes.jpg" class="card-img-top" alt="">
+            <div class="top-right"><i class="fa fa-heart-o fa-lg" style="color:#F05F40" aria-hidden="true"></i></div>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Bed sheets</h5>
+              <div class="card-text text-black-50">Somebody need bedsheets?</div>
+              <hr>
+              <div class="card-text text-black-50">City: Modena</div>
+              <div class="card-text text-black-50">Distance: 10,5 km</div>
+              <button type="button" class="btn btn-outline-secondary btn-sm">I'm interested</button>
             </div>
-        </div>       
+          </div>
+      </div>       
   </div>
 
   <div class="container mt-5">
@@ -503,6 +540,7 @@
     </footer>
 </div>
  
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
