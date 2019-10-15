@@ -96,6 +96,26 @@
                       <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                     </div>
                 </div>
+                <div class="form-group mt-4">
+                    <label for="gift-pictures" class="col-form-label">Gift's category:</label>
+                </div> 
+                <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <select name="selcategories" class="selectpicker" data-width="90%">
+                              <option value="1" selected>All Categories</option>  
+                              <option>Clothing</option>
+                              <option>Books</option>
+                              <option>Games and toys</option>
+                              <option>Electronics</option>
+                              <option>Sports and Outdoors</option> 
+                              <option>Food</option>  
+                              <option>Music and CDs</option>
+                              <option>Home and Kitchen</option>
+                          </select>
+                      </div>
+                  </div>
+                </div>
                 <!-- this script shows me all filenames selected -->
                 <script>
                    $('.custom-file input').on('change',function(){
@@ -106,7 +126,7 @@
                         $(this).next('.custom-file-label').html(files.join(', '));
                     
                     })
-                </script>
+                </script>           
 
             </form>
         </div>
@@ -547,7 +567,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/creative.js"></script>
-    <!-- <script  src="assets/js/contact_usscript.js"></script> -->
+   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+  <!-- (Optional) Latest compiled and minified JavaScript translation files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
+      <!-- <script  src="assets/js/contact_usscript.js"></script> -->
 </body>
 
 </html>
