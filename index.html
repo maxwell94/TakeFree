@@ -91,19 +91,20 @@
                       <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
                     </div>
                     <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="inputGroupFile01"
+                      <input type="file" name="images" class="custom-file-input" id="inputGroupFile01"
                         aria-describedby="inputGroupFileAddon01" multiple>
                       <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                     </div>
                 </div>
+                <!-- this script shows me all filenames selected -->
                 <script>
-                   $('#inputGroupFile01').on('change',function(){
-                        //get the file name
-                        var filepath = $(this).val();
-                        //extract the filename from the filepath
-                        var filename = filepath.split('\\').pop().split('/').pop();
-                        //replace the "Choose a file" label
-                        $(this).next('.custom-file-label').html(filename);
+                   $('.custom-file input').on('change',function(){
+                        var files = [] ; 
+                        for(var i = 0; i < $(this)[0].files.length; i++){
+                            files.push($(this)[0].files[i].name);
+                        }
+                        $(this).next('.custom-file-label').html(files.join(', '));
+                    
                     })
                 </script>
 
