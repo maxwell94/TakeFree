@@ -123,6 +123,14 @@
 	box-shadow: 2px 2px 3px #999;
 }
 
+/* floating action button margin*/
 .my-float{
 	margin-top:22px;
 }
+
+/* modal button save and cancel font-size*/
+#btn-save , #btn-cancel {
+  font-size: 14px;
+
+}
+
